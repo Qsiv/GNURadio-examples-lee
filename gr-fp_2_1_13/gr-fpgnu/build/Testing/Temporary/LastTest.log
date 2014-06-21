@@ -1,0 +1,40 @@
+Start testing: Feb 01 13:35 PST
+----------------------------------------------------------
+1/2 Testing: test_fpgnu
+1/2 Test: test_fpgnu
+Command: "/usr/bin/sh" "/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/build/lib/test_fpgnu_test.sh"
+Directory: /home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/build/lib
+"test_fpgnu" start time: Feb 01 13:35 PST
+Output:
+----------------------------------------------------------
+.
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_fpgnu" end time: Feb 01 13:35 PST
+"test_fpgnu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: qa_fpgnu
+2/2 Test: qa_fpgnu
+Command: "/usr/bin/sh" "/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/build/python/qa_fpgnu_test.sh"
+Directory: /home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/build/python
+"qa_fpgnu" start time: Feb 01 13:35 PST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+OK
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"qa_fpgnu" end time: Feb 01 13:35 PST
+"qa_fpgnu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 01 13:35 PST

@@ -1,0 +1,17 @@
+<block>
+  <category>TESTMOD</category>
+  <import>import testmod</import>
+  <make>testmod.square2_ff()</make>
+  <name>Square2_ff</name>
+  <key>testmod_square2_ff</key>
+  <sink>
+    <name>in</name>
+    <type>real</type>
+    <nports>MAX_IN</nports>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>real</type>
+    <nports>MAX_IN</nports>
+  </source>
+</block>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<block>
+  <name>Fpdata_sink</name>
+  <key>fpgnu_fpdata_sink</key>  
+  <category>FPGNU</category>
+  <import>import fpgnu_swig</import>
+  <make>fpgnu_swig.fpdata_sink($rm_head)</make>
+  <!-- <callback>set_length($rm_head)</callback> -->
+  <param>
+    <name>Remove Header</name>
+	<key>remove_header</key>
+	<value>1</value>
+	<type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>short</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>short</type>
+  </source>
+
+</block>

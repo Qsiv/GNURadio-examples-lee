@@ -1,0 +1,125 @@
+/* -*- c++ -*- */
+/* 
+ * Copyright 2013 <+YOU OR YOUR COMPANY+>.
+ * 
+ * This is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3, or (at your option)
+ * any later version.
+ * 
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this software; see the file COPYING.  If not, write to
+ * the Free Software Foundation, Inc., 51 Franklin Street,
+ * Boston, MA 02110-1301, USA.
+ */
+
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+#include <gr_io_signature.h>
+#include "fpdata_source_impl.h"
+
+namespace gr {
+  namespace fpgnu {
+
+    fpdata_source::sptr
+    fpdata_source::make()
+    {
+      return gnuradio::get_initial_sptr (new fpdata_source_impl());
+    }
+
+    /*
+     * The private constructor
+     */
+    fpdata_source_impl::fpdata_source_impl()
+      : gr_block("fpdata_source",
+		      gr_make_io_signature(1, 1, sizeof (short)),
+		      gr_make_io_signature(1, 1, sizeof (short)))
+    {}
+
+    /*
+     * Our virtual destructor.
+     */
+    fpdata_source_impl::~fpdata_source_impl()
+    {
+    }
+
+    int
+    fpdata_source_impl::general_work (int noutput_items,
+                       gr_vector_int &ninput_items,
+                       gr_vector_const_void_star &input_items,
+                       gr_vector_void_star &output_items)
+    {
+        const short *in = (const short *) input_items[0];
+        short *out = (short *) output_items[0];
+        int pktsize_wrds = 72;
+        int noutput_items_out = 17+pktsize_wrds*2;
+        int i=0, n=0;
+        short temp =0;
+        if (noutput_items< noutput_items_out){
+	   noutput_items_out =0; //Don't produce packets smaller= noutput_items + 17;
+           n = noutput_items;
+ 	}
+
+        // Do
+        while (i < noutput_items_out){
+            //add FP header
+            if (0==i)
+               out[i] = 0x5046; 
+            else if(1==i)
+               out[i] = 0x4D43; 
+            else if(2==i)
+               out[i] = 0x444E; 
+            else if(3==i)
+               out[i] = 0x0000; 
+            else if(4==i)
+               //type DDA WR
+               out[i]= 0x0500; 
+            else if(5==i)
+               out[i] = 0x0000;
+            else if(6==i)
+               out[i] = 0x0000;
+            else if(7==i)
+               out[i] = 0x0000;
+            else if(8==i)
+               out[i] = 0x0000;
+           else if(9==i)
+               out[i] = 0x0000;
+            else if(10==i)
+               out[i] = 0x0000;
+           else if(11==i)
+               out[i] = 0x0000;
+           else if(12==i){
+               temp = (pktsize_wrds <<8) & 0xFF00;
+               out[i] = temp | (pktsize_wrds >>8) & 0xFF;
+           }
+           else if(13==i)
+               out[i] = 0x0000;
+           else if(14==i)
+               out[i] = 0x0000;
+           else if(15==i)
+               out[i] = 0x0000;
+           else if(16==i)
+               out[i] = 0x0000;
+           else 
+	        out[i] = in[n++];
+	    i++;
+        }
+        // Tell runtime system how many input items we consumed on
+        // each input stream.
+        consume_each (n);
+
+        // Tell runtime system how many output items we produced.
+        return noutput_items_out;
+    }
+
+
+  } /* namespace fpgnu */
+} /* namespace gr */
+

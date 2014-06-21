@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<block>
+ <name>Fpdata_source</name>
+  <key>fpgnu_fpdata_source</key>  
+  <category>FPGNU</category>
+  <import>import fpgnu_swig</import>
+  <make>fpgnu_swig.fpdata_source()</make>
+ <sink>
+    <name>in</name>
+    <type>short</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>short</type>
+  </source>
+</block>
+

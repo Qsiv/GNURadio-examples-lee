@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.1">
+  <compounddef id="classgr_1_1fpgnu_1_1fpdata__sink" kind="class" prot="public">
+    <compoundname>gr::fpgnu::fpdata_sink</compoundname>
+    <includes refid="fpdata__sink_8h" local="no">fpdata_sink.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fpgnu_1_1fpdata__sink_1a8c8422b06976dd11d94a2be68060fefa" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fpgnu_1_1fpdata__sink" kindref="compound">fpdata_sink</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;fpdata_sink&gt; gr::fpgnu::fpdata_sink::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/include/fpgnu/fpdata_sink.h" line="40" bodyfile="/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/include/fpgnu/fpdata_sink.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fpgnu_1_1fpdata__sink_1a123bca305b88a9c2d5e6bc4fdf60b2b6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fpgnu_1_1fpdata__sink_1a8c8422b06976dd11d94a2be68060fefa" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::fpgnu::fpdata_sink::make</definition>
+        <argsstring>(int D)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>D</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1fpgnu_1_1fpdata__sink" kindref="compound">fpgnu::fpdata_sink</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1fpgnu_1_1fpdata__sink" kindref="compound">fpgnu::fpdata_sink</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1fpgnu_1_1fpdata__sink_1a123bca305b88a9c2d5e6bc4fdf60b2b6" kindref="member">fpgnu::fpdata_sink::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/include/fpgnu/fpdata_sink.h" line="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/include/fpgnu/fpdata_sink.h" line="38" bodyfile="/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/include/fpgnu/fpdata_sink.h" bodystart="37" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fpgnu_1_1fpdata__sink_1a123bca305b88a9c2d5e6bc4fdf60b2b6" prot="public" virt="non-virtual"><scope>gr::fpgnu::fpdata_sink</scope><name>make</name></member>
+      <member refid="classgr_1_1fpgnu_1_1fpdata__sink_1a8c8422b06976dd11d94a2be68060fefa" prot="public" virt="non-virtual"><scope>gr::fpgnu::fpdata_sink</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

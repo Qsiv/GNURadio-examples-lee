@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.1">
+  <compounddef id="dir_e54a2aa5bf1553f90eb6ea97e2fc3228" kind="dir">
+    <compoundname>/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/include/fpgnu/</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="fp__CandC_8h">fp_CandC.h</innerfile>
+    <innerfile refid="fpdata__sink_8h">fpdata_sink.h</innerfile>
+    <innerfile refid="fpdata__source_8h">fpdata_source.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/include/fpgnu/"/>
+  </compounddef>
+</doxygen>

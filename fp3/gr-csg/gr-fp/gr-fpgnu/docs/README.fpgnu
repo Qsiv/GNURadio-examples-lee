@@ -1,0 +1,11 @@
+This is the fpgnu-write-a-block package meant as a guide to building
+out-of-tree packages. To use the fpgnu blocks, the Python namespaces
+is in 'fpgnu', which is imported as:
+
+    import fpgnu
+
+See the Doxygen documentation for details about the blocks available
+in this package. A quick listing of the details can be found in Python
+after importing by using: 
+
+    help(fpgnu)

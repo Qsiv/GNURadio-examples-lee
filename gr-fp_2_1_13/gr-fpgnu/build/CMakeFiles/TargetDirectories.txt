@@ -1,0 +1,9 @@
+/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/build/swig/CMakeFiles/_fpgnu_swig.dir
+/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/build/swig/CMakeFiles/_fpgnu_swig_doc_tag.dir
+/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/build/swig/CMakeFiles/_fpgnu_swig_swig_tag.dir
+/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/build/lib/CMakeFiles/gnuradio-fpgnu.dir
+/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/build/apps/CMakeFiles/pygen_apps_9a6dd.dir
+/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/build/python/CMakeFiles/pygen_python_3a5c9.dir
+/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/build/swig/CMakeFiles/pygen_swig_6d2ea.dir
+/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/build/lib/CMakeFiles/test-fpgnu.dir
+/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/build/CMakeFiles/uninstall.dir

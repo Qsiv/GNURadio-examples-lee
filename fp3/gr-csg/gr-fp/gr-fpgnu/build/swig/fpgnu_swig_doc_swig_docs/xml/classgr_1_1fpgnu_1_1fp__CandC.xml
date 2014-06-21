@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.1">
+  <compounddef id="classgr_1_1fpgnu_1_1fp__CandC" kind="class" prot="public">
+    <compoundname>gr::fpgnu::fp_CandC</compoundname>
+    <includes refid="fp__CandC_8h" local="no">fp_CandC.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fpgnu_1_1fp__CandC_1add0b014fd2b6365a8bf5a06bc022fde6" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fpgnu_1_1fp__CandC" kindref="compound">fp_CandC</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;fp_CandC&gt; gr::fpgnu::fp_CandC::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/include/fpgnu/fp_CandC.h" line="39" bodyfile="/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/include/fpgnu/fp_CandC.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fpgnu_1_1fp__CandC_1a971a82bb8f5b32e7b9d5ab74abe01e81" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fpgnu_1_1fp__CandC_1add0b014fd2b6365a8bf5a06bc022fde6" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::fpgnu::fp_CandC::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1fpgnu_1_1fp__CandC" kindref="compound">fpgnu::fp_CandC</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1fpgnu_1_1fp__CandC" kindref="compound">fpgnu::fp_CandC</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1fpgnu_1_1fp__CandC_1a971a82bb8f5b32e7b9d5ab74abe01e81" kindref="member">fpgnu::fp_CandC::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/include/fpgnu/fp_CandC.h" line="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/include/fpgnu/fp_CandC.h" line="37" bodyfile="/home/cgardner/sandbox/gr-csg/gr-fp/gr-fpgnu/include/fpgnu/fp_CandC.h" bodystart="36" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fpgnu_1_1fp__CandC_1a971a82bb8f5b32e7b9d5ab74abe01e81" prot="public" virt="non-virtual"><scope>gr::fpgnu::fp_CandC</scope><name>make</name></member>
+      <member refid="classgr_1_1fpgnu_1_1fp__CandC_1add0b014fd2b6365a8bf5a06bc022fde6" prot="public" virt="non-virtual"><scope>gr::fpgnu::fp_CandC</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

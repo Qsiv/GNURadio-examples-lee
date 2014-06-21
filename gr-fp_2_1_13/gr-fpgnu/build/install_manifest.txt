@@ -1,0 +1,13 @@
+/usr/local/include/fpgnu/api.h
+/usr/local/include/fpgnu/fpdata_sink.h
+/usr/local/lib64/libgnuradio-fpgnu.so
+/usr/local/lib64/python2.7/site-packages/fpgnu/_fpgnu_swig.so
+/usr/local/lib64/python2.7/site-packages/fpgnu/fpgnu_swig.py
+/usr/local/lib64/python2.7/site-packages/fpgnu/fpgnu_swig.pyc
+/usr/local/lib64/python2.7/site-packages/fpgnu/fpgnu_swig.pyo
+/usr/local/include/fpgnu/fpgnu/swig/fpgnu_swig.i
+/usr/local/include/fpgnu/fpgnu/swig/fpgnu_swig_doc.i
+/usr/local/lib64/python2.7/site-packages/fpgnu/__init__.py
+/usr/local/lib64/python2.7/site-packages/fpgnu/__init__.pyc
+/usr/local/lib64/python2.7/site-packages/fpgnu/__init__.pyo
+/usr/local/share/gnuradio/grc/blocks/fpgnu_fpdata_sink.xml

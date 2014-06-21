@@ -1,0 +1,9 @@
+/home/cgardner/sandbox/gr-csg/grc/test_block/gr-testmod/build/swig/CMakeFiles/_testmod_swig.dir
+/home/cgardner/sandbox/gr-csg/grc/test_block/gr-testmod/build/swig/CMakeFiles/_testmod_swig_doc_tag.dir
+/home/cgardner/sandbox/gr-csg/grc/test_block/gr-testmod/build/swig/CMakeFiles/_testmod_swig_swig_tag.dir
+/home/cgardner/sandbox/gr-csg/grc/test_block/gr-testmod/build/lib/CMakeFiles/gnuradio-testmod.dir
+/home/cgardner/sandbox/gr-csg/grc/test_block/gr-testmod/build/apps/CMakeFiles/pygen_apps_9a6dd.dir
+/home/cgardner/sandbox/gr-csg/grc/test_block/gr-testmod/build/python/CMakeFiles/pygen_python_956a5.dir
+/home/cgardner/sandbox/gr-csg/grc/test_block/gr-testmod/build/swig/CMakeFiles/pygen_swig_60c50.dir
+/home/cgardner/sandbox/gr-csg/grc/test_block/gr-testmod/build/lib/CMakeFiles/test-testmod.dir
+/home/cgardner/sandbox/gr-csg/grc/test_block/gr-testmod/build/CMakeFiles/uninstall.dir

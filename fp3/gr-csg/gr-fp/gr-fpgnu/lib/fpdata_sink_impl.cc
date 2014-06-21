@@ -1,0 +1,96 @@
+/* -*- c++ -*- */
+/* 
+ * Copyright 2013 <+YOU OR YOUR COMPANY+>.
+ * 
+ * This is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3, or (at your option)
+ * any later version.
+ * 
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this software; see the file COPYING.  If not, write to
+ * the Free Software Foundation, Inc., 51 Franklin Street,
+ * Boston, MA 02110-1301, USA.
+ */
+
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+#include <gr_io_signature.h>
+#include "fpdata_sink_impl.h"
+
+namespace gr {
+  namespace fpgnu {
+
+
+
+    fpdata_sink::sptr
+    fpdata_sink::make(int D)
+    {
+      return gnuradio::get_initial_sptr (new fpdata_sink_impl(D));
+    }
+
+    /*
+     * The private constructor
+     */
+
+
+    fpdata_sink_impl::fpdata_sink_impl(int D)
+      : gr_block("fpdata_sink",
+		      gr_make_io_signature(1, 1, sizeof (short)),
+		      gr_make_io_signature(1, 1, sizeof (short))),
+                      d_rm_head(D)
+    {}
+     /*
+     * virtual destructor.
+     */
+    fpdata_sink_impl::~fpdata_sink_impl()
+    {
+    }
+
+    int
+    fpdata_sink_impl::general_work (int noutput_items,
+                       gr_vector_int &ninput_items,
+                       gr_vector_const_void_star &input_items,
+                       gr_vector_void_star &output_items)
+    {
+        const short *in = (const short *) input_items[0];
+        short *out = (short *) output_items[0];
+        int n=0;
+        int i = 0;
+        int noutput_items_out = 0;
+         
+        
+        // Do process
+        while (i < noutput_items){
+            
+            if (1==d_rm_head & in[i]== 0x5046 & in[i+1]== 0x4D43 &
+                in[i+2]== 0x444E & in[i+3]== 0x0000 & in[i+4]== 0x0700)
+            {
+                  //out_count[n++] = in[i+6];
+                  i=i+7;
+            }
+            else{
+	        out[n++] = in[i++];
+	    }
+                
+        }
+        noutput_items_out=n;
+        // Tell runtime system how many input items we consumed on
+        // each input stream.
+        consume_each (noutput_items);
+
+        // Tell runtime system how many output items we produced.
+        return noutput_items_out;
+    }
+
+
+  } /* namespace fpgnu */
+} /* namespace gr */
+

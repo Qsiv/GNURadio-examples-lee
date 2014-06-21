@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<block>
+  <name>fp_CandC</name>
+  <key>fpgnu_fp_CandC</key>
+  <category>fpgnu</category>
+  <import>import fpgnu_swig</import>
+  <make>fpgnu_swig.fp_CandC()</make>
+  <sink>
+    <name>in</name>
+    <type>short</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>short</type>
+  </source>
+</block>
